@@ -1,16 +1,27 @@
+
  //declare bacteria variables here  
- Bacteria uno = new Bacteria(); 
+
+ Bacteria [] colony;
  void setup()   
  {     
  	//initialize bacteria variables here
+ 	colony = new Bacteria[100];
+ 	for(int i=0; i<colony.length; i++)
+ 	{
+ 		colony[i] = new Bacteria();
+ 	}
  	size(500,500);   
  }   
  void draw()   
  {    
  	//move and show the bacteria
  	background(0);
- 	uno.move();
- 	uno.show();
+ 	for(int i=0; i<colony.length; i++)
+ 	{
+ 		colony[i].move();
+ 		colony[i].show();
+ 		colony[i].avoid();
+ 	}
  }  
  class Bacteria    
  {     
@@ -32,4 +43,9 @@
  		fill(0,myColor,0);
  		ellipse(myX,myY,20,20);
  	}  
+ 	void avoid()
+ 	{
+ 		myX=mouseX+1;
+ 		myY=mouseY+1;
+ 	}
  }    
