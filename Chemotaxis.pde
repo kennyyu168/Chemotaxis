@@ -45,21 +45,23 @@
  	}  
  	void avoid()
  	{
- 		if(myX>mouseX)
- 		{
- 			myX=myX+(int)(Math.random()*3)-1;
- 		}
- 		if(myX<mouseX)
- 		{
- 			myX=myX-(int)(Math.random()*3)-1;
- 		}
- 		if(myY>mouseY)
- 		{
- 			myY=myY+(int)(Math.random()*3)-1;
- 		}
- 		if(myY<mouseY)
- 		{
- 			myY=myY-(int)(Math.random()*3)-1;
- 		}
+
+	 		if(myX>mouseX)
+	 		{
+	 			myX=myX+(int)(Math.random()*5);
+	 		}
+	 		if(myX<mouseX)
+	 		{
+	 			myX=myX-(int)(Math.random()*5);
+	 		}
+	 		if(myY>mouseY)
+	 		{
+	 			myY=myY+(int)(Math.random()*5);
+	 		}
+	 		if(myY<mouseY)
+	 		{
+	 			myY=myY-(int)(Math.random()*5);
+	 		}
+		
  	}
  }    
