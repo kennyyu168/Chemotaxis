@@ -18,7 +18,7 @@
  	background(0);
  	for(int i=0; i<colony.length; i++)
  	{
- 		colony[i].move();
+ 		//colony[i].move();
  		colony[i].show();
  		colony[i].avoid();
  	}
@@ -45,22 +45,22 @@
  	}  
  	void avoid()
  	{
-
+ 		
 	 		if(myX>mouseX)
 	 		{
-	 			myX=myX+(int)(Math.random()*5);
+	 			myX=myX+(int)(Math.random()*5)-1;
 	 		}
 	 		if(myX<mouseX)
 	 		{
-	 			myX=myX-(int)(Math.random()*5);
+	 			myX=myX+(int)(Math.random()*5)-3;
 	 		}
 	 		if(myY>mouseY)
 	 		{
-	 			myY=myY+(int)(Math.random()*5);
+	 			myY=myY+(int)(Math.random()*5)-1;
 	 		}
 	 		if(myY<mouseY)
 	 		{
-	 			myY=myY-(int)(Math.random()*5);
+	 			myY=myY+(int)(Math.random()*5)-3;
 	 		}
 		
  	}
