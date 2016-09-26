@@ -6,12 +6,15 @@
  void setup()   
  {     
  	//initialize bacteria variables here
- 	frameRate(1);
-
- 	colony = new Bacteria[10000];
+ 	colony = new Bacteria[1000];
  	for(int i=0; i<colony.length; i++)
  	{
- 		colony[i] = new Bacteria();
+ 		colony[i] = new Bacteria(200,240);
+ 	}
+ 	colony2 = new Bacteria[1000];
+ 	for(int j=0; j<colony.length; j++)
+ 	{
+ 		colony2[j] = new Bacteria(440,240);
  	}
  	size(640,480);   
  }   
@@ -25,13 +28,24 @@
  		colony[i].show();
  		colony[i].avoid();
  	}
+ 	for(int j=0; j<colony2.length; j++)
+ 	{
+ 		//colony2[j].move();
+ 		colony2[j].show();
+ 		colony2[j].avoid();
+ 	}
  }  
  void mousePressed()
  {
- 	colony = new Bacteria[10000];
+ 	colony = new Bacteria[1000];
  	for(int i=0; i<colony.length; i++)
  	{
- 		colony[i] = new Bacteria();
+ 		colony[i] = new Bacteria(200,240);
+ 	}
+ 	colony2 = new Bacteria[1000];
+ 	for(int j=0; j<colony.length; j++)
+ 	{
+ 		colony[j] = new Bacteria(440,240);
  	}
  	size(640,480); 
  	redraw();
@@ -40,10 +54,10 @@
  {     
  	//lots of java!
  	int myX, myY, myColor;
- 	Bacteria()
+ 	Bacteria(int x, int y)
  	{
- 		myX=320;
- 		myY=240;
+ 		myX=x;
+ 		myY=y;
  		myColor=color((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
  	}
  	void move()
