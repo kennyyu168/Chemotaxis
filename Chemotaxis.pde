@@ -9,12 +9,12 @@
  	colony = new Bacteria[1000];
  	for(int i=0; i<colony.length; i++)
  	{
- 		colony[i] = new Bacteria(200,240);
+ 		colony[i] = new Bacteria(240,240);
  	}
  	colony2 = new Bacteria[1000];
  	for(int j=0; j<colony.length; j++)
  	{
- 		colony2[j] = new Bacteria(440,240);
+ 		colony2[j] = new Bacteria(400,240);
  	}
  	size(640,480);   
  }   
@@ -40,12 +40,12 @@
  	colony = new Bacteria[1000];
  	for(int i=0; i<colony.length; i++)
  	{
- 		colony[i] = new Bacteria(200,240);
+ 		colony[i] = new Bacteria(240,240);
  	}
  	colony2 = new Bacteria[1000];
  	for(int j=0; j<colony.length; j++)
  	{
- 		colony[j] = new Bacteria(440,240);
+ 		colony[j] = new Bacteria(400,240);
  	}
  	size(640,480); 
  	redraw();
