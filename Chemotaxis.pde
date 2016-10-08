@@ -8,7 +8,7 @@
  		colony[i] = new Bacteria(240,240);
  	}
  	colony2 = new Bacteria[1000];
- 	for(int j=0; j<colony.length; j++)
+ 	for(int j=0; j<colony2.length; j++)
  	{
  		colony2[j] = new Bacteria(400,240);
  	}
@@ -36,7 +36,7 @@
  		colony[i] = new Bacteria(240,240);
  	}
  	colony2 = new Bacteria[1000];
- 	for(int j=0; j<colony.length; j++)
+ 	for(int j=0; j<colony2.length; j++)
  	{
  		colony[j] = new Bacteria(400,240);
  	}
